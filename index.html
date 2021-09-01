@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/ec0cb9c31c.js" crossorigin="anonymous"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+<!-- task bar
+ --> 
+
+<nav class="row fixed-top bg-light">
+    <div class="col">
+       <span class=" d-none d-md-block">ATG.WORLD</span>
+
+    </div>
+    <div class="col">
+      
+      <input class=" form-control rad d-none d-md-block" type="text" placeholder="Search for your favourite groups in ATG" style="width: 480px;" aria-label="Search">
+
+    </div>
+    <div class="col">
+      <i class="d-md-none fa fa-square-full "></i>
+        <i class="d-md-none fa fa-circle "></i>
+        <button type="button" class="d-md-none btn btn-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+         <i class="fa fa-caret-down"></i> 
+        
+        </button>
+      <span class="end d-none d-md-block">create account.
+        
+        
+
+        <button type="button" class="end btn btn-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+         
+        <a class="end d-none d-md-block dropdown-toggle">it's free</a>
+        </button>
+      </span>  
+    </div>
+
+
+
+</nav>
+
+<!-- Button trigger modal -->
+
+
+<!-- panel -->
+<div >
+
+  <img src="https://askcomputers.ca/wp-content/uploads/2019/02/radek-grzybowski-66457-unsplash.jpg" class="panel" alt="img">
+  <div class="paneltext"> <h1 class="panelh1">Computer Engineering</h1> <p class="panelp">142,765 Computer Engineers follow this</p> 
+  </div>
+
+</div>
+<!-- panel menu-->
+
+
+  <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container-fluid">
+    <h1 class="d-md-none">Posts</h1>
+    <button class="navbar-toggler bg-light dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <h1 class="btn1 btn">filters:</h1>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">all</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Job</a>
+        </li>
+        
+      </ul>
+
+      
+
+    </div>
+
+
+  <button class="d-none d-md-block btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    write post
+  </button>
+  <button type="button" style="margin-right: 15%;" id="join" onclick="joinfunc()"class="btn btn-primary">join group</button>
+  </div>
+
+  
+
+</nav>
+
+<!-- posts -->
+
+<center>
+  <hr style="border-top: 2px solid black;width:80%;" class="d-none d-md-block">
+<div class="row" style="width: 80%;">
+  <div class="col-md-12 col-lg-8">
+    <div class="card">
+  <img src="images/clouds.png" class="card-img-top" alt="...">
+  <div class="card-body container">
+    
+      <p class="card-type">✍️ Article</p>
+   
+
+    <div class="row">
+      <div class="col-10">
+        <h5 class="card-title">What if famous brands had regular fonts? Meet RegulaBrands!</h5>
+      </div>
+      
+    </div>
+    
+    <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+
+    <div class="row">
+      <div class="col-6">
+        <div style="display:inline-block;vertical-align:top;">
+            <img src="images/sak.png" style="width: 48px;height: 48px; padding: 10px;" alt="img"/>
+      </div>
+
+      <div style="display:inline-block;">
+        <div>Sarthak Kamra</div>
+        <div class="d-md-none"><p>1.4k views</p></div>
+      </div>
+        
+       
+
+      </div>
+
+      <div class="col-4">
+        <button class="d-none d-md-block  btn btn-light" style="width:150px">1.4k views</button>
+      </div>
+
+      <div class="col-2 ">
+
+        <i class="fa fa-share-alt btn btn-secondary"></i>
+        
+
+
+      </div>
+
+    </div>
+    
+    
+    
+</div>
+</div>
+
+<div class="card">
+  <img src="images/wall.png" class="card-img-top" alt="...">
+  <div class="card-body container">
+    
+      <p class="card-type">🔬️ Education</p>
+   
+
+    <div class="row">
+      <div class="col-10">
+        <h5 class="card-title">Tax Benefits for Investment under National Pension Scheme launched by Government</h5>
+      </div>
+      
+    </div>
+    
+    <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+
+    <div class="row">
+      <div class="col-6">
+        <div style="display:inline-block;vertical-align:top;">
+            <img src="images/sarah.png" style="width: 48px;height: 48px; padding: 10px;" alt="img"/>
+      </div>
+
+      <div style="display:inline-block;">
+        <div>Sarah West</div>
+        <div class="d-md-none"><p>1.4k views</p></div>
+      </div>
+        
+       
+
+      </div>
+
+      <div class="col-4">
+        <button class="d-none d-md-block  btn btn-light" style="width:150px">1.4k views</button>
+      </div>
+
+      <div class="col-2 ">
+
+        <i class="fa fa-share-alt btn btn-secondary"></i>
+        
+
+
+      </div>
+
+    </div>
+    
+    
+    
+</div>
+</div>
+<div class="card">
+  <img src="images/car.png" class="card-img-top" alt="...">
+  <div class="card-body container">
+    
+      <p class="card-type">🗓️ Meetup</p>
+   
+
+    <div class="row">
+      <div class="col-10">
+        <h5 class="card-title">Finance & Investment Elite Social Mixer @Lujiazui</h5>
+      </div>
+      
+    </div>
+    
+    
+
+    <div class="row">
+      <div class="col-6">
+        <div style="display:inline-block;vertical-align:top;">
+            <img src="images/sak.png" style="width: 48px;height: 48px; padding: 10px;" alt="img"/>
+      </div>
+
+      <div style="display:inline-block;">
+        <div>Sarthak Kamra</div>
+        <div class="d-md-none"><p>1.4k views</p></div>
+      </div>
+        
+       
+
+      </div>
+
+      <div class="col-4">
+        <button class="d-none d-md-block  btn btn-light" style="width:150px">1.4k views</button>
+      </div>
+
+      <div class="col-2 ">
+
+        <i class="fa fa-share-alt btn btn-secondary"></i>
+        
+
+
+      </div>
+
+    </div>
+    
+    
+    
+</div>
+</div>
+
+
+  </div>
+
+
+  <div class="col-lg-4"> 
+    <input class=" form-control" type="text" placeholder="Noida, India" aria-label="Search">
+   <p style="text-align: left;color: grey;height: 10px;">Your location will help us serve 
+    better and extend a personalised experience.</p>
+  </div>
+   
+</div>
+  
+</center>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="  d-none d-md-block smsize modal-title" id="exampleModalLabel">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+
+        <div class="col-lg-6 col-md-12">
+           
+            <h2 class="smsize" >create account</h2>
+                     
+          
+
+          
+          <div class="input-group">
+          <input type="text" class="smsize form-control" placeholder="firstname" >
+  
+          <input type="text" class="smsize form-control" placeholder="lastname" >
+        </div>
+        <input type="email" class="smsize form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        <input type="password" class="smsize form-control" placeholder="password">
+
+        <input type="password" class="smsize form-control" placeholder="confirm password">
+        
+        <button type="button" style="margin: 10px 0px;width: 180px;" class="smsize rad btn btn-primary" data-bs-dismiss="modal">Create Account</button>
+          
+        
+        <p class="smsize " style="margin: 2px;"><a class="fa fa-facebook"></a>sign up with facebook </p>
+        <p class="smsize "><a class="fa fa-google"></a>sign up with google </p>
+        <p class="smsize" style="display:none">forgot password?</p>
+          </div>
+        
+        
+        <div class="col-lg-6 col-md-12">
+
+        <span  id="question" class="smsize">Already have an account?</span>
+        <a id="signin" class="smsize" href="#" onclick="togglefunc()">sign in</a>
+        
+
+        <img  class=" d-none d-md-block" width=200px height=200px src="images/signin.png">
+        <p class="smsize " id="terms">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script type="text/javascript" src="index.js"></script>
+
+
+</body>
+
+</html>
